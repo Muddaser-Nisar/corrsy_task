@@ -7,6 +7,7 @@ import {
   fetchSubjectsStart,
   fetchSubjectsSuccess,
 } from './homeReducer';
+
 export const fetchSubjects = createAsyncThunk(
   'homeData/fetchSubjects',
   async (params, {getState, dispatch}) => {
