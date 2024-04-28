@@ -9,8 +9,7 @@ import {useAppDispatch} from 'redux/store';
 import {fonts} from 'utils/constants/fonts';
 import {fetchSubjects} from './slice/homeAction';
 import styles from './styles';
-
-const Index = () => {
+const Index = ({navigation}) => {
   const dispatch = useAppDispatch();
   const {subjects, loading, error} = useSelector(
     (state: any) => state?.homeReducer,
@@ -38,7 +37,14 @@ const Index = () => {
             </View>
           </View>
         </View>
-        <TouchableOpacity style={styles.detailButton}>
+        <TouchableOpacity
+          style={styles.detailButton}
+          onPress={() => {
+            navigation.navigate('Chapters', {
+              courseId: item?._id,
+              courseName: item?.subject?.Subject_name,
+            });
+          }}>
           <Text style={styles.btnText}>View Chapters</Text>
         </TouchableOpacity>
       </View>

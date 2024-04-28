@@ -17,5 +17,6 @@ export const NAVIGATION_SCREENS = {
     Home: 'Home',
     CoursesProgress: 'CoursesProgress',
     Profile: 'Profile',
+    Chapters: 'Chapters',
   },
 };

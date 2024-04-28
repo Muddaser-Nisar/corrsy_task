@@ -1,4 +1,5 @@
 import lock from 'assets/images/icons/Lock.svg';
+import backButton from 'assets/images/icons/backButton.svg';
 import closeEye from 'assets/images/icons/closeEye.svg';
 import homeTab from 'assets/images/icons/homeTab.svg';
 import openEye from 'assets/images/icons/openEye.svg';
@@ -14,6 +15,7 @@ interface IconPaths {
   closeEye?: string;
   lock?: string;
   phoneNumber?: string;
+  backButton?: string;
 }
 const icons: IconPaths = {
   homeTab,
@@ -23,6 +25,7 @@ const icons: IconPaths = {
   closeEye,
   lock,
   phoneNumber,
+  backButton,
 
   // ... Add other icons properties with imported icons
 };
