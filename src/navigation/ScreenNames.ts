@@ -18,5 +18,6 @@ export const NAVIGATION_SCREENS = {
     CoursesProgress: 'CoursesProgress',
     Profile: 'Profile',
     Chapters: 'Chapters',
+    LessonDetails: 'LessonDetails',
   },
 };

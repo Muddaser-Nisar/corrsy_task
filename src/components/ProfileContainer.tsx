@@ -9,7 +9,6 @@ interface Props {
   phoneNumber?: string;
   email?: string;
 }
-
 const ProfileContainer: React.FC<Props> = ({name, phoneNumber, email}) => {
   return (
     <View style={styles.card}>
@@ -20,7 +19,6 @@ const ProfileContainer: React.FC<Props> = ({name, phoneNumber, email}) => {
     </View>
   );
 };
-
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',

@@ -25,7 +25,7 @@ const styles = StyleSheet.create<Styles>({
     shadowRadius: 4,
     elevation: 5, // for Android
     marginBottom: hp(1.5),
-    height: hp(18),
+    minHeight: hp(18),
     borderColor: colors.inActiveColor,
     marginTop: hp(1),
     alignSelf: 'center',
@@ -33,6 +33,7 @@ const styles = StyleSheet.create<Styles>({
     marginHorizontal: wp(2),
     justifyContent: 'center',
     alignItems: 'center',
+    paddingVertical: hp(2),
   },
   subIcon: {
     height: 80,
@@ -41,8 +42,9 @@ const styles = StyleSheet.create<Styles>({
   },
   subTitle: {
     color: colors.black,
-    fontFamily: fonts['Quicksand-Bold'],
+    fontFamily: fonts['Quicksand-Medium'],
     fontSize: hp(2),
+    textAlign: 'center',
   },
   lessonTitle: {
     fontFamily: fonts['Quicksand-Medium'],

@@ -21,7 +21,5 @@ const styles = StyleSheet.create({
   },
   safeAreaContainer: {
     flex: 1,
-    // justifyContent: 'center',
-    // alignItems: 'center',
   },
 });

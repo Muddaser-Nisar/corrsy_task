@@ -1,48 +1,46 @@
 import Loader from 'components/Loader';
 import MainHeader from 'components/MainHeader';
 import ScreenWrapper from 'layout/ScreenWrapper';
-import {NAVIGATION_SCREENS} from 'navigation/ScreenNames';
 import React, {useEffect} from 'react';
-import {
-  FlatList,
-  Image,
-  ScrollView,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import {FlatList, ScrollView, Text, TouchableOpacity, View} from 'react-native';
 import {heightPercentageToDP} from 'react-native-responsive-screen';
 import {useSelector} from 'react-redux';
 import {useAppDispatch} from 'redux/store';
 import {colors} from 'utils/constants/colors';
 import icons from 'utils/constants/icons';
-import {fetchChapters} from './slice/chaptersAction';
+import {fetchLessonDetails} from './slice/lessonDetailsAction';
 import styles from './styles';
 const Index = ({navigation, route}) => {
-  const {courseId, courseName} = route.params;
+  const {lessonId, lessonTitle} = route.params;
 
   const dispatch = useAppDispatch();
-  const {chapters, lessons, loading, error} = useSelector(
-    (state: any) => state?.chaptersReducer,
+  const {lessonDetails, loading, error} = useSelector(
+    (state: any) => state?.lessonDetailsReducer,
   );
+
   useEffect(() => {
-    dispatch(fetchChapters(courseId));
+    dispatch(fetchLessonDetails(lessonId));
   }, [dispatch]);
+
   const renderItem = ({item, index}) => {
     return (
-      <TouchableOpacity
-        style={[styles.card]}
-        onPress={() => {
-          navigation.navigate(NAVIGATION_SCREENS.DashBoard.LessonDetails, {
-            lessonId: item?._id,
-            lessonTitle: item?.title,
-          });
-        }}>
-        <Text style={styles.subTitle}>Lesson No.{item?.lessonNumber}</Text>
-        <Text style={styles.lessonTitle}>{item?.title}</Text>
-      </TouchableOpacity>
+      <View>
+        <Text style={[styles.lessonTitle, {textAlign: 'center'}]}>
+          {item?.content?.contentTitle}
+        </Text>
+
+        <View style={[styles.card]}>
+          <Text style={styles.subTitle}>
+            {item?.content?.description ? item?.content?.description : 's'}
+          </Text>
+        </View>
+      </View>
     );
   };
+  console.log(
+    ':::lessonDetailslessonDetails:: :::::::',
+    JSON.stringify(lessonDetails),
+  );
 
   return (
     <ScreenWrapper>
@@ -54,24 +52,21 @@ const Index = ({navigation, route}) => {
           }}>
           <icons.backButton />
         </TouchableOpacity>
-        <MainHeader title={`${courseName}'s Chapter`} />
+        <MainHeader title={`${lessonTitle}`} />
       </View>
       <ScrollView showsVerticalScrollIndicator={false} style={{flex: 1}}>
         <View style={styles.courseContainer}>
-          <Image
-            source={{uri: chapters[0]?.chapter_icon}}
-            style={[styles.subIcon]}
-          />
           <Text
             style={[
               styles.subTitle,
               {color: colors.activeColor, marginTop: heightPercentageToDP(2)},
             ]}>
-            {chapters[0]?.chapter_name}
+            {/* {chapters[0]?.chapter_name} */}
           </Text>
         </View>
+
         <FlatList
-          data={lessons}
+          data={lessonDetails}
           renderItem={renderItem}
           style={{
             marginTop: heightPercentageToDP(2),

@@ -17,8 +17,6 @@ export const fetchSubjects = createAsyncThunk(
         `${apiName.courseListing}${userData.userId}/${userData.gradeId}`,
       );
       const {data} = response.data;
-      console.log('data', data);
-
       dispatch(fetchSubjectsSuccess(data));
     } catch (error) {
       dispatch(fetchSubjectsFailure(error.message));
