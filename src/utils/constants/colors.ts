@@ -14,7 +14,8 @@ type Color =
   | 'dimColor'
   | 'dimText'
   | 'activeColor'
-  | 'inActiveColor';
+  | 'inActiveColor'
+  | 'appBackground';
 // Add more color names...
 
 export const colors: Record<Color, string> = {
@@ -34,5 +35,6 @@ export const colors: Record<Color, string> = {
   dimText: '#C4CDD5',
   activeColor: '#0EAB8C',
   inActiveColor: '#A2A2A2',
+  appBackground: '#FCFDF6',
   // Add more colors as needed...
 };

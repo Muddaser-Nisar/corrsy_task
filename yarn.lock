@@ -6287,10 +6287,23 @@
   "resolved" "https://registry.npmjs.org/react-native-config/-/react-native-config-1.5.1.tgz"
   "version" "1.5.1"
 
+"react-native-flash-message@^0.4.2":
+  "integrity" "sha512-YvdXRW9AGMTI99S3DJZhLO0mbk/ehKv/UQf4/Df+3dtGi8DlkidRbyqCQZk1WMtZ7rN85PMTGr/xEI9CF9z0YA=="
+  "resolved" "https://registry.npmjs.org/react-native-flash-message/-/react-native-flash-message-0.4.2.tgz"
+  "version" "0.4.2"
+  dependencies:
+    "prop-types" "^15.8.1"
+    "react-native-iphone-screen-helper" "^2.0.2"
+
 "react-native-flipper@>=0.100.0":
   "integrity" "sha512-bDRfIgE3v/jjEEdnvGP0T6maDD+bXhDAQ/SZUYTKd/CQ6YIU1c0EF+e0urU62LNMv6XEFQKz226McdddyVhYZA=="
   "resolved" "https://registry.npmjs.org/react-native-flipper/-/react-native-flipper-0.212.0.tgz"
   "version" "0.212.0"
+
+"react-native-iphone-screen-helper@^2.0.2":
+  "integrity" "sha512-geuw/bli83+tOg8UpoioLk1H1aEy0wnMDusWkCazsyH6fSk6qzmgaZ2cRyyJRU8s2tG87HctZFKGTkyYzcUcfA=="
+  "resolved" "https://registry.npmjs.org/react-native-iphone-screen-helper/-/react-native-iphone-screen-helper-2.1.1.tgz"
+  "version" "2.1.1"
 
 "react-native-responsive-screen@^1.4.2":
   "integrity" "sha512-BLYz0UUpeohrib7jbz6wDmtBD5OmiuMRko4IT8kIF63taXPod/c5iZgmWnr5qOnK8hMuKiGMvsM3sC+eHX/lEQ=="
@@ -6328,7 +6341,7 @@
     "css-select" "^5.1.0"
     "css-tree" "^1.1.3"
 
-"react-native@*", "react-native@^0.0.0-0 || >=0.60 <1.0", "react-native@>=0.35", "react-native@>=0.59.0", "react-native@>=0.63.0", "react-native@>=0.69", "react-native@>0.62.0", "react-native@0.74.0":
+"react-native@*", "react-native@^0.0.0-0 || >=0.60 <1.0", "react-native@>=0.35", "react-native@>=0.42.0", "react-native@>=0.59.0", "react-native@>=0.63.0", "react-native@>=0.69", "react-native@>0.62.0", "react-native@0.74.0":
   "integrity" "sha512-Vpp9WPmkCm4TUH5YDxwQhqktGVon/yLpjbTgjgLqup3GglOgWagYCX3MlmK1iksIcqtyMJHMEWa+UEzJ3G9T8w=="
   "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.74.0.tgz"
   "version" "0.74.0"

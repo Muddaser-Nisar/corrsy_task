@@ -16,12 +16,12 @@ export default ScreenWrapper;
 const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
-    backgroundColor: colors.white,
+    backgroundColor: colors.appBackground,
     paddingHorizontal: wp(5),
   },
   safeAreaContainer: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    // justifyContent: 'center',
+    // alignItems: 'center',
   },
 });

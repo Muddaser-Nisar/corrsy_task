@@ -1,77 +1,3 @@
-// import React from 'react';
-// import {
-//   ActivityIndicator,
-//   StyleSheet,
-//   Text,
-//   TouchableOpacity,
-// } from 'react-native';
-// import {
-//   heightPercentageToDP as hp,
-//   widthPercentageToDP,
-// } from 'react-native-responsive-screen';
-// import {colors} from '../utils/constants/colors';
-// import {fonts} from '../utils/constants/fonts';
-
-// interface ButtonProps {
-//   title?: string;
-//   onPress?: () => void;
-//   icon?: React.ReactNode;
-//   isLoading?: boolean;
-// }
-
-// const PrimaryButton: React.FC<ButtonProps> = ({
-//   title,
-//   onPress,
-//   icon,
-//   isLoading,
-// }) => {
-//   return (
-//     <TouchableOpacity
-//       style={[icon ? styles.iconButton : styles.button]}
-//       onPress={onPress}>
-//       {isLoading ? (
-//         <ActivityIndicator color={colors.white} />
-//       ) : (
-//         <>
-//           {icon && icon}
-//           <Text style={styles.buttonText}>{title}</Text>
-//         </>
-//       )}
-//     </TouchableOpacity>
-//   );
-// };
-
-// const styles = StyleSheet.create({
-//   button: {
-//     backgroundColor: colors.orange,
-//     borderRadius: 25,
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//     padding: hp(1.7),
-//     minHeight: hp(2),
-//     alignSelf: 'stretch',
-//   },
-//   iconButton: {
-//     flexDirection: 'row',
-//     backgroundColor: colors.orange,
-//     borderRadius: 25,
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//     padding: hp(2),
-//     minHeight: hp(4),
-//     alignSelf: 'stretch',
-//   },
-
-//   buttonText: {
-//     color: colors.white,
-//     fontFamily: fonts['Inter-Bold'],
-//     fontSize: widthPercentageToDP(3.8),
-//     paddingHorizontal: 10,
-//   },
-// });
-
-// export default PrimaryButton;
-
 import React from 'react';
 import {
   ActivityIndicator,
@@ -79,37 +5,23 @@ import {
   Text,
   TouchableOpacity,
 } from 'react-native';
-import {
-  heightPercentageToDP as hp,
-  widthPercentageToDP,
-} from 'react-native-responsive-screen';
-import {colors} from '../utils/constants/colors';
-import {fonts} from '../utils/constants/fonts';
+import {heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
+import {colors} from 'utils/constants/colors';
+import {fonts} from 'utils/constants/fonts';
 interface ButtonProps {
   title?: string;
   onPress?: () => void;
-  icon?: React.ReactNode;
   isLoading?: boolean;
 }
 
-const PrimaryButton: React.FC<ButtonProps> = ({
-  title,
-  onPress,
-  icon,
-  isLoading,
-}) => {
+const PrimaryButton: React.FC<ButtonProps> = ({title, onPress, isLoading}) => {
   return (
-    <TouchableOpacity
-      style={[icon ? styles.iconButton : styles.button]}
-      onPress={onPress}>
+    <TouchableOpacity style={[styles.button]} onPress={onPress}>
       {isLoading ? (
         <ActivityIndicator color={colors.white} />
       ) : (
-        <>
-          {icon && icon}
-          <Text style={styles.buttonText}>{title}</Text>
-        </>
+        <Text style={styles.buttonText}>{title}</Text>
       )}
     </TouchableOpacity>
   );
@@ -117,31 +29,21 @@ const PrimaryButton: React.FC<ButtonProps> = ({
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: colors.orange,
-    borderRadius: 25,
+    backgroundColor: colors.activeColor,
+    borderRadius: 5,
     justifyContent: 'center',
     alignItems: 'center',
     padding: hp(1.7),
     minHeight: hp(2),
     alignSelf: 'stretch',
   },
-  iconButton: {
-    flexDirection: 'row',
-    backgroundColor: colors.orange,
-    borderRadius: 25,
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: hp(2),
-    minHeight: hp(4),
-    alignSelf: 'stretch',
-  },
 
   buttonText: {
     color: colors.white,
-    fontFamily: fonts['Inter-Bold'],
-    fontSize: widthPercentageToDP(3.8),
+    fontFamily: fonts['Quicksand-Bold'],
+    fontSize: hp(1.9),
     paddingHorizontal: 10,
   },
 });
 
-export default PrimaryButton;
+export default React.memo(PrimaryButton);

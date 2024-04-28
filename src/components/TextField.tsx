@@ -8,11 +8,13 @@ import {
 } from 'react-native';
 import {
   heightPercentageToDP as hp,
+  widthPercentageToDP,
   widthPercentageToDP as wp,
 } from 'react-native-responsive-screen';
-import {colors} from '../utils/constants/colors';
-import {fonts} from '../utils/constants/fonts';
-import icons from '../utils/constants/icons';
+
+import {colors} from 'utils/constants/colors';
+import {fonts} from 'utils/constants/fonts';
+import icons from 'utils/constants/icons';
 interface Props {
   placeholder?: string;
   onChangeText?: (text: string) => void;
@@ -38,7 +40,7 @@ const TextField: React.FC<Props> = ({
     <View
       style={[
         styles.container,
-        {borderColor: value ? colors.orange : colors.borderColor},
+        {borderColor: value ? colors.activeColor : colors.borderColor},
       ]}>
       {icon}
       <TextInput
@@ -64,15 +66,17 @@ const TextField: React.FC<Props> = ({
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    borderRadius: 35,
+    borderRadius: 5,
     justifyContent: 'center',
     alignItems: 'center',
-    paddingVertical: hp(0.2),
-    minHeight: hp(0.5),
-    alignSelf: 'stretch',
-    borderColor: colors.borderColor,
-    borderWidth: 1,
+    // paddingVertical: hp(0.2),
+    minHeight: hp(6),
+    alignSelf: 'center',
+    borderColor: colors.inActiveColor,
+    borderWidth: 0.5,
     paddingHorizontal: wp(6),
+    backgroundColor: colors.white,
+    width: widthPercentageToDP(80),
   },
   textInput: {
     flex: 1,

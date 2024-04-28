@@ -1,8 +1,7 @@
 import {StyleSheet, TextStyle, ViewStyle} from 'react-native';
 import {heightPercentageToDP as hp} from 'react-native-responsive-screen';
-import {colors} from '../../utils/constants/colors';
-import {fonts} from '../../utils/constants/fonts';
-
+import {colors} from 'utils/constants/colors';
+import {fonts} from 'utils/constants/fonts';
 interface Styles {
   contentContainer?: ViewStyle;
   title?: TextStyle;

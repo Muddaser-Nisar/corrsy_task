@@ -1,19 +1,19 @@
-// import {Auth} from 'aws-amplify';
 import axios from 'axios';
+import Config from 'react-native-config';
+import {userData} from 'utils/constants/userData';
+console.log('BASE_URL', Config.BASE_URL);
 
 const axiosInstance = axios.create({
-  baseURL: 'https://yp1k5h3zai.execute-api.us-east-1.amazonaws.com/prod/',
+  baseURL: Config.BASE_URL,
 });
 
 axiosInstance.interceptors.request.use(
   async config => {
     if (!config.headers.Authorization) {
-      // const accessToken = (await Auth.currentSession())
-      //   .getIdToken()
-      //   .getJwtToken();
-      const accessToken = '';
+      const accessToken = userData.token;
       config.headers.Authorization = `Bearer ${accessToken}`;
     }
+    console.log('configg', config);
 
     return config;
   },
