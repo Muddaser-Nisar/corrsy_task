@@ -65,6 +65,7 @@ You've successfully run and modified your React Native App. :partying_face:
 - If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
 
 # Troubleshooting
+https://github.com/Muddaser-Nisar/corrsy_task/blob/main/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-04-28%20at%2015.47.30.png
 
 If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
 
