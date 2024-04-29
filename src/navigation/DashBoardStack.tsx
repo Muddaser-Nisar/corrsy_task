@@ -2,6 +2,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import * as React from 'react';
 import Chapters from 'screens/Chapters/Index';
 import LessonDetails from 'screens/LessonDetails/Index';
+import Quiz from 'screens/Quiz/Index';
 
 import TabNavigator from './BottomTabBar';
 import {NAVIGATION_SCREENS} from './ScreenNames';
@@ -21,6 +22,7 @@ const DashBoardStack = () => {
         name={NAVIGATION_SCREENS.DashBoard.LessonDetails}
         component={LessonDetails}
       />
+      <Stack.Screen name={NAVIGATION_SCREENS.DashBoard.Quiz} component={Quiz} />
     </Stack.Navigator>
   );
 };

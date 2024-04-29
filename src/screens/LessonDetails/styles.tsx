@@ -12,24 +12,25 @@ interface Styles {
   subTitle?: TextStyle;
   lessonTitle?: TextStyle;
   courseContainer?: ViewStyle;
+  bottomButton?: ViewStyle;
 }
 
 const styles = StyleSheet.create<Styles>({
   card: {
-    width: hp(18),
+    width: hp(25),
     backgroundColor: 'white',
-    borderRadius: hp(18) / 2,
+    borderRadius: hp(25) / 2,
     shadowColor: '#000',
     shadowOffset: {width: 0, height: 2},
     shadowOpacity: 0.2,
     shadowRadius: 4,
     elevation: 5, // for Android
     marginBottom: hp(1.5),
-    minHeight: hp(18),
+    minHeight: hp(25),
     borderColor: colors.inActiveColor,
-    marginTop: hp(1),
+    marginTop: hp(3),
     alignSelf: 'center',
-    paddingHorizontal: wp(2),
+    paddingHorizontal: wp(3),
     marginHorizontal: wp(2),
     justifyContent: 'center',
     alignItems: 'center',
@@ -56,6 +57,13 @@ const styles = StyleSheet.create<Styles>({
     paddingVertical: hp(4),
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  bottomButton: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    alignItems: 'flex-end',
+    paddingVertical: hp(10),
+    paddingHorizontal: wp(5.5),
   },
 });
 

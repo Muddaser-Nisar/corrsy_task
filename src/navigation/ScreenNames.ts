@@ -19,5 +19,6 @@ export const NAVIGATION_SCREENS = {
     Profile: 'Profile',
     Chapters: 'Chapters',
     LessonDetails: 'LessonDetails',
+    Quiz: 'Quiz',
   },
 };

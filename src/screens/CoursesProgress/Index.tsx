@@ -1,11 +1,13 @@
 import ScreenWrapper from 'layout/ScreenWrapper';
 import React from 'react';
-import {StyleSheet, Text} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 
 const Index = () => {
   return (
     <ScreenWrapper>
-      <Text>Courses Progress</Text>
+      <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+        <Text>Courses Progress Page Soon!</Text>
+      </View>
     </ScreenWrapper>
   );
 };
