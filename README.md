@@ -1,79 +1,88 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
-
 # Getting Started
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
-## Step 1: Start the Metro Server
+## Step 1: clone the project
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+git clone https://github.com/Muddaser-Nisar/corrsy_task
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Step 2: install node_modules
 
-```bash
-# using npm
-npm start
+cd corssy(project directory)
+then npm i or yarn add
 
-# OR using Yarn
-yarn start
-```
-
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
 
 ### For Android
 
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
+npx react-native run-android
 
 ### For iOS
 
-```bash
-# using npm
-npm run ios
+cd ios
+then npx react-native run-ios
 
-# OR using Yarn
-yarn ios
-```
+### Screenshot of the app
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+### The total amount of time spent on this assessment
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+I've spent a complete one working day efforts on this task
 
-## Step 3: Modifying your App
+### Technical choices I made while implementing this app
 
-Now that you have successfully run the app, let's modify it.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+### I've implemented each and everything from the scracth and my fain focus was to write upto max clean,resuable code while practing the latest practices 
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+### SOLID Architecture
 
-## Congratulations! :tada:
+Adopted the SOLID principles (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion) to ensure a modular and flexible architecture. This approach facilitates easier collaboration among developers and makes the codebase more adaptable to future changes.
 
-You've successfully run and modified your React Native App. :partying_face:
+### Responsive Design
 
-### Now what?
+Incorporated a responsive design approach using a responsive library to ensure the application's user interface (UI) adapts seamlessly to various screen sizes and orientations. This enhances user experience and accessibility across different devices.
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+### Redux Toolkit
 
-# Troubleshooting
+Utilized Redux Toolkit, a powerful library for Redux state management, to streamline state updates, manage complex application states efficiently, and handle asynchronous API calls seamlessly. Redux Toolkit's simplified syntax and 
+built-in tools enhance developer productivity and code maintainability.
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+### Robust State Management
 
-# Learn More
+Emphasized writing robust and scalable code for state management, ensuring the application maintains consistent and reliable states across different components and user interactions. This approach minimizes bugs, enhances stability, and improves overall performance.
 
-To learn more about React Native, take a look at the following resources:
+### Mock Authentication
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Implemented a comprehensive mock authentication flow to simulate real-world authentication processes during development and testing phases. This enables thorough validation of authentication-related features without relying on external authentication services or risking sensitive data exposure.
+
+### Interactive UI Design
+
+Designed an intuitive and interactive user interface (UI) with engaging elements and smooth transitions to provide users with an immersive and enjoyable experience. Interactive UI components enhance user engagement, encourage exploration, and make the application more appealing.
+
+### Secure Base URL
+
+Ensured security by configuring the base URL for API endpoints using environment variables. This practice protects sensitive information, such as API keys or authentication tokens, from exposure in the application's source code, reducing the risk of security vulnerabilities.
+
+### SVG Icons
+
+Employed scalable vector graphics (SVG) for iconography to achieve crisp and high-quality visuals across different screen resolutions and pixel densities. SVG icons offer flexibility, maintain sharpness, and consume fewer resources compared to raster images, enhancing performance and user experience.
+These technical choices were made to create a robust, scalable, and user-centric application, prioritizing factors such as security, maintainability, performance, and user satisfaction.
+
+### If I have more time or next phase
+
+1-CI/CD pipelines could be implemented
+3-Splash screen could be implemented
+4-Internet connectivity across the app
+5-App ICONS
+6-Error Boundaries
+7-Store(app store and play store) Configuration
+8-Animation/UI enhancement
+9-Sonar Quebe (for code quality)
+
+### Assumtions I made
+
+1-I don’t find any mapping key b/w chapters and lessons so treated/assumed chapter as single entity for time being
+2- For quiz I've implemented mock up quiz
+3-For Progress i've implemented the logic but due to short time I couldn't render it
+
+
+###  I hope efforts will be appreciated.Thank you!!!
+
