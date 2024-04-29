@@ -68,20 +68,20 @@ These technical choices were made to create a robust, scalable, and user-centric
 
 ### If I have more time or next phase
 
-1-CI/CD pipelines could be implemented
-3-Splash screen could be implemented
-4-Internet connectivity across the app
-5-App ICONS
-6-Error Boundaries
-7-Store(app store and play store) Configuration
-8-Animation/UI enhancement
-9-Sonar Quebe (for code quality)
+### 1-CI/CD pipelines could be implemented
+### 3-Splash screen could be implemented
+### 4-Internet connectivity across the app
+### 5-App ICONS
+### 6-Error Boundaries
+### 7-Store(app store and play store) Configuration
+### 8-Animation/UI enhancement
+### 9-Sonar Quebe (for code quality)
 
 ### Assumtions I made
 
-1-I don’t find any mapping key b/w chapters and lessons so treated/assumed chapter as single entity for time being
-2- For quiz I've implemented mock up quiz
-3-For Progress i've implemented the logic but due to short time I couldn't render it
+### 1-I don’t find any mapping key b/w chapters and lessons so treated/assumed chapter as single entity for time being
+### 2- For quiz I've implemented mock up quiz
+### 3-For Progress i've implemented the logic but due to short time I couldn't render it
 
 
 ###  I hope efforts will be appreciated.Thank you!!!
