@@ -97,6 +97,9 @@ These technical choices were made to create a robust, scalable, and user-centric
 ### 2- For quiz I've implemented mock up quiz
 ### 3-For Progress i've implemented the logic but due to short time I couldn't render it
 
+### Video Demo
+
+Video is attached in the repo for reference.
 
 ###  I hope efforts will be appreciated.Thank you!!!
 
