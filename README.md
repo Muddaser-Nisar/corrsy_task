@@ -17,11 +17,25 @@ then npm i or yarn add
 npx react-native run-android
 
 ### For iOS
-
 cd ios
 then npx react-native run-ios
 
 ### Screenshot of the app
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;"> 
+  <img src="https://github.com/Muddaser-Nisar/corrsy_task/assets/63184236/d50c3edc-d260-4476-abd9-850bbb8fc447" alt="Screenshot 1" width="200" style="margin: 30px;" /> 
+    <img src="https://github.com/Muddaser-Nisar/corrsy_task/assets/63184236/6febc0f2-474a-4df9-bda0-79293a0dfb19" alt="Screenshot 2" width="200" style="margin: 30px;" /> 
+    <img src="https://github.com/Muddaser-Nisar/corrsy_task/assets/63184236/76d57398-1bd3-4d99-8e5c-d42ca6506585" alt="Screenshot 3" width="200" style="margin: 30px;" /> 
+    <img src="https://github.com/Muddaser-Nisar/corrsy_task/assets/63184236/00c04234-bde6-4bd8-814a-2e8766682304" alt="Screenshot 4" width="200" style="margin: 30px;" /> 
+</div>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;"> 
+  <img src="https://github.com/Muddaser-Nisar/corrsy_task/assets/63184236/80ccf389-6480-406d-861a-795f5a5e5a41" alt="Screenshot 5" width="200" style="margin: 30px;" /> 
+    <img src="https://github.com/Muddaser-Nisar/corrsy_task/assets/63184236/392c19b2-5356-439b-9629-11b01425d727" alt="Screenshot 6" width="200" style="margin: 30px;" /> 
+    <img src="https://github.com/Muddaser-Nisar/corrsy_task/assets/63184236/bfa427e1-acaf-4215-86e3-bc9f9d45a16e" alt="Screenshot 7" width="200" style="margin: 30px;" /> 
+    <img src="https://github.com/Muddaser-Nisar/corrsy_task/assets/63184236/9b89bb9f-981b-496a-a4a8-e206dd2aa8c7" alt="Screenshot 8" width="200" style="margin: 30px;" /> 
+</div>
+
 
 ### The total amount of time spent on this assessment
 
